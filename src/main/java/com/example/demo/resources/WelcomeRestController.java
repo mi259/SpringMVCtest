@@ -10,7 +10,7 @@ import io.swagger.annotations.ApiOperation;
 @Api(value = "Swagger2WelcomeRestController", description = "This REST Api related to Welcome Message!!!!")
 @RestController
 public class WelcomeRestController {
-
+	//controler
 	@ApiOperation(value = "Get Welcome Message For The Given Name ", response = String.class, tags = "getWelcomeNote")
 	@GetMapping("/welcome/{name}")
 	public String welcome(@PathVariable("name") String name) {
